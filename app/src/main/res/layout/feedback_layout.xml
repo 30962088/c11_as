@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/shape_header1" >
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <View
+                android:layout_width="11.5dp"
+                android:layout_height="19dp"
+                android:background="@drawable/icon_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="帮助与反馈"
+            android:textColor="#333"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/publish_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <View
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:background="@drawable/icon_publish" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#00000000"
+                android:gravity="left|center_vertical"
+                android:hint="输入反馈标题"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColorHint="#6a6a6a"
+                android:textSize="15sp" 
+                android:maxLength="30"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d9d9d9" />
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:gravity="left|top"
+                android:hint="输入反馈内容"
+                android:padding="10dp"
+                android:textColorHint="#6a6a6a"
+                android:textSize="15sp"
+                android:maxLength="1000" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="#ececec" >
+
+        <LinearLayout
+            android:id="@+id/published_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <View
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/icon_publish" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已发表"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/published"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(37)"
+                android:textColor="#0b92c3"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#1a818181" />
+
+        <LinearLayout
+            android:id="@+id/ipublish_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <View
+                android:layout_width="14.5dp"
+                android:layout_height="12dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/icon_comment2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我回复"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/ipublish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(37)"
+                android:textColor="#0b92c3"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#1a818181" />
+
+        <LinearLayout
+            android:id="@+id/publish_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <View
+                android:layout_width="13dp"
+                android:layout_height="13.5dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/icon_publish2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发帖"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

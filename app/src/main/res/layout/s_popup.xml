@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupWindow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4d000000" >
+
+    <LinearLayout
+        android:id="@+id/popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#fff" >
+
+        <GridView 
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"></GridView>
+
+        <View
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/s_close"
+             />
+    </LinearLayout>
+
+</RelativeLayout>

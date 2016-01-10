@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/shape_header1" >
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <View
+                android:layout_width="11.5dp"
+                android:layout_height="19dp"
+                android:background="@drawable/icon_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发帖"
+            android:textColor="#333"
+            android:textSize="17sp" />
+
+        <TextView 
+            android:id="@+id/publish_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center" 
+            android:textSize="14sp"
+            android:text="发送"
+            android:textColor="#ef3d23"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.rockerhieu.emojicon.EmojiconEditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#00000000"
+                android:gravity="left|center_vertical"
+                android:hint="输入帖子标题"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColorHint="#6a6a6a"
+                android:textSize="15sp" 
+                android:maxLength="30"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#d9d9d9" />
+
+            <com.rockerhieu.emojicon.EmojiconEditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:gravity="left|top"
+                android:hint="帖子内容"
+                android:padding="10dp"
+                android:textColorHint="#6a6a6a"
+                android:textSize="15sp"
+                android:maxLength="1000" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:text="29"
+            android:textColor="#333"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#c8c8c8" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/del"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:text="删除照片"
+            android:textColor="#41c1ef"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

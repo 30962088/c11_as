@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <com.cctv.xiqu.android.widget.VideoHeadRelativeLayout 
+            android:id="@+id/play_btn"
+            android:layout_width="match_parent"
+            android:layout_height="214dp">
+            
+            <ImageView 
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+            
+            <View 
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:background="@drawable/icon_play"
+                android:layout_centerInParent="true"/>
+            
+        </com.cctv.xiqu.android.widget.VideoHeadRelativeLayout>
+        
+        <TextView 
+            android:id="@+id/title"
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="《CCTV空中剧院》节目预告"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:drawableLeft="@drawable/icon_video_orange"
+ 			android:drawablePadding="5dp"/>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:visibility="gone"
+            android:background="#eaeaea"
+            android:gravity="center_vertical"
+            android:paddingLeft="17dp">
+            
+            <View 
+                android:layout_width="10.5dp"
+                android:layout_height="17dp"
+                android:background="@drawable/icon_hot"/>
+            
+            <TextView 
+                android:id="@+id/comment"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="热门评论(24)"
+                android:textSize="13sp"
+                android:textColor="#333"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+
+</FrameLayout>

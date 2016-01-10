@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+		<style>
+			*{
+				padding: 0;
+				margin:0;
+			}
+			body{
+				background:rgba(255,255,255,0);
+				padding:5px;
+			}
+			img{
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		{{content}}
+		<script>
+		 var list = document.querySelectorAll("[style]");
+		 for(var i = 0;i<list.length;i++){
+		 	var dom = list[i];
+		 	dom.removeAttribute("style");
+		 }
+		</script>
+	</body>
+</html>

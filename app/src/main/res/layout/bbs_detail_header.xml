@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:background="#faf8f7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp" 
+        android:paddingBottom="10dp">
+
+        <com.rockerhieu.emojicon.EmojiconTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="京剧《翠屏山》上海戏剧学院演出"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.makeramen.PhotoView
+                android:id="@+id/avatar"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:background="#fff"
+                android:src="@drawable/ic_launcher" >
+            </com.makeramen.PhotoView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="九州戏台"
+                    android:textColor="#2ebcf0"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="07-18 13:00"
+                    android:textColor="#80000000"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dbdbdb"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+        
+        <com.rockerhieu.emojicon.EmojiconTextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="梨园宝宝秀是中央电视台戏曲频道《快乐戏园》栏目倾力打造\n一档少儿戏迷宝宝秀节目，宗旨为“争创精品、服务戏迷”，为传承戏曲艺术培养梨园新苗。"
+            android:textColor="#000"
+            android:textSize="16sp" />
+        
+        <ImageView 
+            android:layout_marginTop="10dp"
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:visibility="gone"/>
+        
+    </LinearLayout>
+
+</FrameLayout>

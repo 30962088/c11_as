@@ -1,0 +1,1 @@
+include ':app', ':MyLibrary', ':emojicon', ':social_sdk_library_project', ':sourcecode'

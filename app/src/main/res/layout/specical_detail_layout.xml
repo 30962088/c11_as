@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/bg_head_shadow" >
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <View
+                android:layout_width="11.5dp"
+                android:layout_height="19dp"
+                android:background="@drawable/icon_back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:layout_width="79dp"
+                android:layout_height="match_parent" >
+
+                <View
+                    android:layout_width="59dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/icon_scale_center" 
+                    android:layout_centerInParent="true"/>
+
+                <View
+                    android:id="@+id/scaleUp"
+                    android:layout_width="39.5dp"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:id="@+id/scaleDown"
+                    android:layout_width="39.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/share"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <View
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:background="@drawable/icon_share" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50.5dp"
+        android:layout_marginTop="36dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fcf4f2"
+                android:orientation="vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:tag="sticky" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:gravity="left|center_vertical"
+                    android:text="京剧《翠屏山》上海戏剧"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="央视网 2014年06月27日 16:36"
+                    android:textColor="#80000000"
+                    android:textSize="12sp" 
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:background="#dbdbdb" />
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#00000000" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottom_shadow"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_border1"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="7dp" >
+
+                <View
+                    android:layout_width="11dp"
+                    android:layout_height="16dp"
+                    android:background="@drawable/icon_pen" />
+
+                <com.rockerhieu.emojicon.EmojiconEditText
+                    android:id="@+id/edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:hint="写跟帖"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:textColorHint="#6a6a6a"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/sendBtn"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:background="@drawable/icon_send" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/not_login_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="245跟帖"
+                android:textColor="#6e6e6e"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="12.5dp"
+                android:layout_height="10.5dp"
+                android:layout_alignTop="@id/comment"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-6dp"
+                android:layout_toRightOf="@id/comment"
+                android:background="@drawable/icon_comment_red" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

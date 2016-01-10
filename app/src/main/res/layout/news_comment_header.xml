@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#333"
+            android:text="京剧《翠屏山》上海戏剧学院演出"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="23dp"
+            android:paddingBottom="23dp"/>
+        
+        <LinearLayout 
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#eaeaea"
+            android:gravity="center_vertical"
+            android:paddingLeft="17dp">
+            
+            <View 
+                android:layout_width="10.5dp"
+                android:layout_height="17dp"
+                android:background="@drawable/icon_hot"/>
+            
+            <TextView 
+                android:id="@+id/comment"
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="热门评论(24)"
+                android:textSize="13sp"
+                android:textColor="#333"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+
+</FrameLayout>
